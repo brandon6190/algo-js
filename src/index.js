@@ -1,10 +1,23 @@
-const defaultAwesomeFunction = (name) => {
-  const returnStr = `I am the Default Awesome Function, fellow comrade! - ${name}`;
-  return returnStr;
+function palindrome(string) {
+
+}
+
+function isPrime(num) {
+
+}
+
+function nthFibonacci(num, memo=[]) {
+
+}
+
+function functionBind(func, context) {
+
+}
+
+
+module.export = {
+  palindrome,
+  isPrime,
+  nthFibonacci,
+  functionBind
 };
-
-const awesomeFunction = () => 'I am just an Awesome Function';
-
-export default defaultAwesomeFunction;
-
-export { awesomeFunction };
