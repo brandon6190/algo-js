@@ -15,7 +15,7 @@ function functionBind(func, context) {
 }
 
 
-module.export = {
+module.exports = {
   palindrome,
   isPrime,
   nthFibonacci,
