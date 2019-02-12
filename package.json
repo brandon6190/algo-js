@@ -1,7 +1,7 @@
 {
   "name": "algo-js",
   "version": "1.0.0",
-  "description": "JavaScript Library for performent CS algorithms",
+  "description": "JavaScript Library for performent algorithms",
   "main": "./src/index.js",
   "scripts": {
     "mocha": "mocha || exit 0",
