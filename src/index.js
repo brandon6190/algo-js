@@ -1,7 +1,12 @@
 function palindrome(string) {
-  let reverseStr = string.toLowerCase().split('').reverse().join('').replace(/[\W_]/g, '');
-  let regStr = string.toLowerCase().replace(/[\W_]/g, '');
-  return reverseStr === regStr ? true : false;
+  const reverseStr = string
+    .toLowerCase()
+    .split('')
+    .reverse()
+    .join('')
+    .replace(/[\W_]/g, '');
+  const regStr = string.toLowerCase().replace(/[\W_]/g, '');
+  return reverseStr === regStr;
 }
 
 function isPrime(num) {
@@ -13,7 +18,7 @@ function isPrime(num) {
   return num > 1;
 }
 
-function nthFibonacci(number, memo=[]) {
+function nthFibonacci(number, memo = []) {
   function memoFunc(num) {
     if (memo[num]) {
       return memo[num];
@@ -23,11 +28,12 @@ function nthFibonacci(number, memo=[]) {
       return 0;
     }
 
-    if (num === 1 | num === 2) {
+    if ((num === 1) | (num === 2)) {
       return 1;
     }
 
-    return  memo[num] = nthFibonacci(num - 1, memo) + nthFibonacci(num - 2, memo);
+    return (memo[num] =
+      nthFibonacci(num - 1, memo) + nthFibonacci(num - 2, memo));
   }
   return memoFunc(number);
 }
@@ -37,10 +43,9 @@ function functionBind(func, context) {
   return () => context.func();
 }
 
-
 module.exports = {
   palindrome,
   isPrime,
   nthFibonacci,
-  functionBind
+  functionBind,
 };
