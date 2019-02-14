@@ -10,7 +10,7 @@ function palindrome(string) {
 }
 
 function isPrime(num) {
-  for (let i = 2; i < Math.sqrt(num); i++) {
+  for (let i = 2; i < Math.sqrt(num); i += 1) {
     if (num % i === 0) {
       return false;
     }
@@ -28,7 +28,7 @@ function nthFibonacci(number, memo = []) {
       return 0;
     }
 
-    if ((num === 1) | (num === 2)) {
+    if ((num === 1) || (num === 2)) {
       return 1;
     }
 
